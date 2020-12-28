@@ -1,6 +1,6 @@
 # Background Jobs
 
-Background jobs in Node.js with Redis based on [Diego Fernandes](https://github.com/rocketseat-content/masterclass-nodejs-background-jobs) and [Roberto Sousa's](https://github.com/robertosousa1) classes on [Digital Innovation One](https://digitalinnovation.one/ "Digital Innovation One"). The main goal is to develop a simple User registration system using background tasks in Node.js and Redis DB. 
+Background jobs in Node.js with Redis based on [Diego Fernandes](https://github.com/rocketseat-content/masterclass-nodejs-background-jobs)' online content and [Roberto Sousa's](https://github.com/robertosousa1) class on [Digital Innovation One](https://digitalinnovation.one/ "Digital Innovation One"). The main goal is to develop a simple User registration system using background tasks in Node.js and Redis DB. 
 In NodeJS, the libraries Express and Bull are used to manipulate threads. 
 
 ## Requirements 
