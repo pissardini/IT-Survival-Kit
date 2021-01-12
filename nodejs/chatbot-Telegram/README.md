@@ -6,7 +6,7 @@ The main goal is to develop a simple ChatBot that answers basic questions for PT
 ## Requirements 
 
 - [Node.js](https://nodejs.org/en/)
-- [Node Telegram Bot API]: (https://github.com/yagop/node-telegram-bot-api)
+- [Node Telegram Bot API](https://github.com/yagop/node-telegram-bot-api)
 - [Youtube-node](https://www.npmjs.com/package/youtube-node)
 - [DialogFlow API](https://www.npmjs.com/package/dialogflow)
 
