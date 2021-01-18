@@ -33,8 +33,10 @@ $variable = new Name();
 $variable->nameOfFunction();
 ```
 
-##Useful classes
-###Database class
+## Useful classes
+
+### Database class
+
 ```
     class Name
     {
