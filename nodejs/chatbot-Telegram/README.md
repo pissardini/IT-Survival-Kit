@@ -17,4 +17,4 @@ The main goal is to develop a simple ChatBot that answers basic questions for PT
 - Access [YouTube API](https://developers.google.com/youtube/v3/), get the access key and configure it in the **keys** folder.
 - Download this folder.
 - Execute *yarn install* to install the dependencies.
-- Execute *node index.js* to execute.
+- Execute *node index.js* to start.
