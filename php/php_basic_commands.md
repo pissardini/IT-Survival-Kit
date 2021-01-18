@@ -1,6 +1,6 @@
 # Basic commands in PHP
 
-##Database
+## Database
 * **connection**: using PDO.
 ```
 $pdo = null;
@@ -44,7 +44,7 @@ $prepare->bindParam(1,$variable);
 $prepare->execute();
 ```
 
-##Datetime
+## Datetime
 * **basic datetime**: using DateTime class. 
 ```
     $data = new DateTime();
@@ -62,7 +62,7 @@ $interval = new DateInterval('P5Y');
 $data -> sub($intervalo);
 ```
 
-##Exceptions
+## Exceptions
 * **basic exception**: 
 ```
 throw new Exception("Essa é uma exceção");
@@ -80,7 +80,7 @@ try {
 }
 ```
 
-##Functions
+## Functions
 * **standard model**: 
 ``` 
 function Name(type $param1,type $param2): type_return{
