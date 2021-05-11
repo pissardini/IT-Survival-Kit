@@ -12,7 +12,7 @@ git init directory
 git clone repo
 ```
 
-## Remote repositores
+## Remote repositories
 
 ### Connection
 ```
@@ -37,5 +37,4 @@ git pull <remote>
 ### Push remote
 ```
 git push <remote> <branch>
-
 ```
