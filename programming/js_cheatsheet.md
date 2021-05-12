@@ -139,17 +139,21 @@ console.log(n);
 
 ## Functions
 
+* **Basic model**: 
+
 ```
 function name(parameter1, parameter2, parameter3) {
     // code
 }
 ```
 
+
 ## Global objects
 
 ### Date
 
 #### Constructor
+
 ```
 new Date(year, monthIndex)
 new Date(year, monthIndex, day)
@@ -158,6 +162,14 @@ new Date(year, monthIndex, day, hours, minutes)
 new Date(year, monthIndex, day, hours, minutes, seconds)
 new Date(year, monthIndex, day, hours, minutes, seconds, milliseconds)
 ```
+
+```
+var d = new Date();
+alert( d.getDay());
+alert( d.getMinutes());
+```
+
+
 #### Static Methods
 
 * **Date.now()**:
@@ -252,28 +264,93 @@ var person = {
 };
 ```
 
-### Arrays
+### Dictionaries
 
 * **Creation**:
 
 ```
-var fruit = ["Banana", "Apple", "Pear"];
+var fruit = {name: "Banana", color: "yellow"};
+console.log(fruit.name);
 ```
 
-#### Methods
+## Spread
 
-* **concat()** : join arrays into one.
-* **indexOf()** : returns the first position at which a given element appears in an array.
-* **join()** : combine elements of an array into a single string and return the string.
-* **lastIndexOf()** : gives the last position at which a given element appears in an array.
-* **pop()** : removes the last element of an array.
-* **push()** : add a new element at the end.
-* **reverse()** : sort elements in a descending order.
-* **shift()** : remove the first element of an array.
-* **slice()** : pulls a copy of a portion of an array into a new array.
-* **sort()** :sorts elements alphabetically.
-* **splice()** : adds elements in a specified way and position.
-* **toString()** : converts elements to strings.
-* **unshift()** : adds a new element to the beginning.
-* **valueOf()** : returns the primitive value of the specified object.
+```
+function myFunction(x, y, z) { }
+var args = [0, 1, 2];
+myFunction(...args);
 
+
+var dateFields = [1970, 0, 1];  // 1 Jan 1970
+var d = new Date(...dateFields);
+```
+
+## Arrays 
+
+* **Basic model**:
+
+```
+var fruit = ["Banana", "Apple", "Pear"];
+const array = Array.of(1,2,3);
+```
+
+### Methods
+
+* **.concat()** : join arrays into one.
+* **.every()**: tests whether all elements in the array pass the test implemented by the provided function.
+```
+const array1 = [1, 30, 39, 29, 10, 13];
+console.log(array1.every(value=>value%2===0)); //tests if all numbers are even
+```
+* **.indexOf()** : returns the first position at which a given element appears in an array.
+* **.join()** : combine elements of an array into a single string and return the string.
+* **.lastIndexOf()** : gives the last position at which a given element appears in an array.
+* **.pop()** : removes the last element of an array.
+* **.push()** : add a new element at the end.
+* **.reduce()**: executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+```
+const arr = [1,2,3,4,5];
+arr.reduce((total,value)=> total +=value,0); //15
+```
+* **.reverse()** : sort elements in a descending order.
+* **.shift()** : remove the first element of an array.
+* **.slice()** : pulls a copy of a portion of an array into a new array.
+* **.sort()** :sorts elements alphabetically.
+* **.splice()** : adds elements in a specified way and position.
+* **.toString()** : converts elements to strings.
+* **.unshift()** : adds a new element to the beginning.
+* **.valueOf()** : returns the primitive value of the specified object.
+
+### Iterate
+
+```
+const arr = [1,2,3,4,5];
+
+arr.forEach(value,index)=> {
+   console.log(`${index}: ${value}`);
+}
+```
+
+
+## Classes and objects
+
+```
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+  // Getter
+  get area() {
+    return this.calcArea();
+  }
+  // Method
+  calcArea() {
+    return this.height * this.width;
+  }
+}
+
+const square = new Rectangle(10, 10);
+
+console.log(square.area); // 100
+```
