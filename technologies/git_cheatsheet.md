@@ -51,6 +51,12 @@ git checkout -b name_branch
 git status
 ```
 
+### Excluding branches
+
+```
+git branch -d name_branch
+```
+
 ### Merging branches 
 
 ```
@@ -65,8 +71,18 @@ git checkout master
 ```
 
 ### Show branches 
+
+Local: 
+
 ```
-git hist --all
+git branch -a
+```
+
+
+Remotes: 
+
+```
+git branch -r
 ```
 
 ## Remote repositories
