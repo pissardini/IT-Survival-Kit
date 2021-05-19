@@ -67,7 +67,7 @@ git hist --all
 
 ### Navigating between branches 
 ```
-git checkout master
+git checkout name_branch
 ```
 
 ### Show branches 
@@ -77,7 +77,6 @@ Local:
 ```
 git branch -a
 ```
-
 
 Remotes: 
 
@@ -111,9 +110,14 @@ git remote add origin url_git
 git fetch <remote> <branch>
 ```
 
+### List remote repositories
+```
+git remote -v 
+```
+
 ### Pull remote 
 ```
-git pull <remote>
+git pull <name> <remote>
 ```
 
 ### Push remote
