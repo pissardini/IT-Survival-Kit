@@ -5,7 +5,7 @@
 ### Build a image 
 
 ```
-docker build -t myimage:1.0
+docker build -t [name_image:1.0]
 ```
 
 ### List images  
@@ -17,15 +17,14 @@ docker images
 ### Delete an image 
 
 ```
-docker image rm myimage:1.0
+docker image rm [name_image:1.0]
 ```
 
 ## Run
 
 ### Run a container
 ```
-docker container run --name web -p
-5000:80 alpine:3.9
+docker run --name [container_name] -p 5000:80 [name_image]
 ```
 
 ### List networks
@@ -43,7 +42,7 @@ docker container ls
 
 ### Stop a container
 ```
-docker container stop mycontainer
+docker container stop [name_container]
 ```
 
 ## Sharing 
@@ -51,13 +50,25 @@ docker container stop mycontainer
 ### Pull image from a registry 
 
 ```
-docker pull myimage:1.0 
+docker pull [myimage:1.0] 
 ```
 
 ### Push image from a registry 
 
 ```
-docker push myrepo/myimage:1.0 
+docker push [myrepo/myimage:1.0] 
+```
+
+## Basic resources 
+
+### Copy file into a container
+```
+cp [name_file] [name_container]:/[name_file] 
+```
+
+### Execute bash 
+```
+docker exec -it [name_container] bash
 ```
 
 ## Docker-Compose 

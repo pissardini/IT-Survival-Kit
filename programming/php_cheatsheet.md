@@ -74,6 +74,12 @@ foreach ($colors as $key=>$value){
 	echo "$key = $value";
 }
 ```
+#### Functions
+
+```
+isset($var);  //determines if a variable is considered set
+unset($var);  //destroys the specified variables.
+```
 
 ## Classes and Objects
 
@@ -133,6 +139,14 @@ echo "Today is " . date("Y-m-d") . "<br>";
 echo "Today is " . date("l");
 echo "The time is " . date("h:i:sa");
 ?>
+```
+## Encoding 
+
+```
+mb_detect_encoding($string);  // detects character encoding
+mb_convert_encoding($string); //converts the character encoding of string to to_encoding 
+utf8_decode ($string);        //converts the string string from the UTF-8 encoding to ISO-8859-1
+utf8_encode ($string);        //converts the string string from the ISO-8859-1 encoding to UTF-8.
 ```
 
 ## Exceptions

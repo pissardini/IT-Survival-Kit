@@ -102,7 +102,7 @@ git remote add <name> <url>
 
 For GitHub: 
 ```
-git remote add origin url_git
+git remote add origin 'your_url_name'
 ```
 
 ### Fetch a specific branch 
@@ -122,5 +122,7 @@ git pull <name> <remote>
 
 ### Push remote
 ```
-git push <name> <master|branch>
+git push 'remote_name' 'branch_name'
+
+//git push -u origin master
 ```
