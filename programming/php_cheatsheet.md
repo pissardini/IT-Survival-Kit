@@ -169,6 +169,14 @@ try {
 }
 ```
 
+## Errors messages 
+
+```
+error_reporting(0);									// turn off all error reporting
+error_reporting(E_ERROR | E_WARNING | E_PARSE);		// report simple running errors
+error_reporting(E_ALL ^ E_NOTICE);					// report all errors except E_NOTICE
+error_reporting(E_ALL);								// report all PHP errors
+```
 
 ## Network functions
 
