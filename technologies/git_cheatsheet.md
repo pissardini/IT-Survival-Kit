@@ -122,7 +122,6 @@ git pull <name> <remote>
 
 ### Push remote
 ```
-git push 'remote_name' 'branch_name'
-
-//git push -u origin master
+git push 'remote_name' 'remote_name'
+git push --set-upstream 'remote_name' 'remote_name'
 ```
